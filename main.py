@@ -8,7 +8,9 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from bot_commands import *
 
-app = ApplicationBuilder().token(token_telegram).build()
+
+token = "toklen telegram"
+app = ApplicationBuilder().token(token).build()
 
 app.add_handler(CommandHandler("div", div_command))
 app.add_handler(CommandHandler('diff', diff_command))
